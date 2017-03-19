@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{name}}</title>
+<link href="css/bootstrap-grid.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/style.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+<div class="container">
+<h1>{{name}}</h1>
+<h4>{{about}}</h4>
+</div>
+</header>
+
+<nav>
+<div class="container text-center">
+<a href="{{github}}" target="_blank">GitHub</a>
+<a href="{{curriculum}}" target="_blank">Curriculum</a>
+<a href="{{contact}}"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i><span class="hidden-xs"> Contact</span></a>
+</div>
+</nav>
+
+<section class="portfolio">
+<div class="container">
+<div class="row">
+{{grid}}
+</div>
+</div>
+</section>
+
+<footer>
+Template by <a href="https://github.com/felipecbarelli">Felipe Barelli</a>. Available in <a href="https://github.com/felipecbarelli/portfolio-template">GitHub</a>.
+</footer>
+
+<script src="js/jquery.1.11.3.min.js"></script>
+<script src="js/script.min.js"></script>
+</body>
+</html>
