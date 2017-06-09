@@ -60,7 +60,7 @@ for diretorio in diretorios:
       arquivoProjetoFinal.write(tempTemplateProject.encode('utf-8'))
 
 templateIndex = templateIndex.replace("{{name}}", name, 5)
-templateIndex = templateIndex.replace("{{about}}", about, 2)
+templateIndex = templateIndex.replace("{{about}}", about, 3)
 templateIndex = templateIndex.replace("{{grid}}", finalIndexGrid, 1)
 templateIndex = templateIndex.replace("{{github}}", github, 1)
 templateIndex = templateIndex.replace("{{curriculum}}", curriculum, 1)
