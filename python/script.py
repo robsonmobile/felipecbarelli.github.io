@@ -1,6 +1,8 @@
 import json
 import os, sys
 import glob
+reload(sys)  
+sys.setdefaultencoding("utf8")
 
 diretorios = os.listdir("../portfolio/")
 
@@ -57,8 +59,8 @@ for diretorio in diretorios:
     with open("../" + diretorio + ".html", "w") as arquivoProjetoFinal:
       arquivoProjetoFinal.write(tempTemplateProject.encode('utf-8'))
 
-templateIndex = templateIndex.replace("{{name}}", name, 2)
-templateIndex = templateIndex.replace("{{about}}", about, 1)
+templateIndex = templateIndex.replace("{{name}}", name, 5)
+templateIndex = templateIndex.replace("{{about}}", about, 2)
 templateIndex = templateIndex.replace("{{grid}}", finalIndexGrid, 1)
 templateIndex = templateIndex.replace("{{github}}", github, 1)
 templateIndex = templateIndex.replace("{{curriculum}}", curriculum, 1)
